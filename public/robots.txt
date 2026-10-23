@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /team/
+
+Host: https://cosmiq.lat
+Sitemap: https://cosmiq.lat/sitemap.xml
