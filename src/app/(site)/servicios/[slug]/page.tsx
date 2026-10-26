@@ -116,8 +116,8 @@ export default async function ServicePage({
             </h2>
             <PricingSection plans={crmSeatPlans} showGuarantee={false} />
             <p className="max-w-xl text-xs text-slate-400">
-              Usuario adicional fuera de tu plan: +$15 USD/mes. Facturación semestral o anual, sin
-              opción mensual.
+              Usuario adicional a partir del usuario 10: +$15 USD/mes. Facturación semestral o
+              anual, sin opción mensual.
             </p>
           </Container>
         </section>

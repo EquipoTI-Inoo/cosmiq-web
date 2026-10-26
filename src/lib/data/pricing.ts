@@ -28,7 +28,7 @@ export const pricingHero = {
   enterpriseText: "¿Necesitas algo más grande?",
   enterpriseCta: "Contáctanos para Enterprise",
   usersNote:
-    "* El plan Avanzado incluye CRM desde $45/usuario/mes según el número de usuarios que elijas. Ver planes de CRM. Usuario adicional: +$15/mes.",
+    "* El plan Avanzado incluye CRM desde $45/usuario/mes según el número de usuarios que elijas. Ver planes de CRM. Usuario adicional a partir del usuario 10: +$15/mes.",
 };
 
 export const agentPlans: PricingPlan[] = [
@@ -91,7 +91,7 @@ export const agentPlans: PricingPlan[] = [
       "Números de WhatsApp ilimitados",
       "Agentes IA ilimitados configurables",
       "CRM completo — planes desde $45/usuario/mes",
-      "Usuario adicional fuera de tu plan: +$15/mes c/u",
+      "Usuario adicional a partir del usuario 10: +$15/mes c/u",
       "Pipeline de ventas — tableros Kanban (Oportunidades)",
       "Facturación y cobros — Factura, Texto para pagar, Suscripciones",
       "Embudos y Sitios web — constructor completo",
@@ -197,7 +197,7 @@ export const comparisonTable = {
     { feature: "Agentes de Voz IA (llamadas)", values: [false, true, true, true] },
     { feature: "CRM (gestor de contactos)", values: [false, false, true, true] },
     { feature: "Usuarios incluidos en el CRM", values: ["—", "—", "1, 5 o 10", "A medida"] },
-    { feature: "Usuario adicional", values: ["—", "—", "+$15/mes", "A medida"] },
+    { feature: "Usuario adicional (desde el 10mo)", values: ["—", "—", "+$15/mes", "A medida"] },
     { feature: "Pipeline de ventas (Oportunidades)", values: [false, false, true, true] },
     { feature: "Facturación y cobros (Factura, SMS)", values: [false, false, true, true] },
     { feature: "Embudos y Sitios web", values: [false, false, true, true] },
