@@ -115,11 +115,15 @@ export default function PricingCard({ plan, annual }: { plan: PricingPlan; annua
                 <span className={`text-5xl font-black tracking-tight ${highlighted ? "text-white" : "text-slate-900"}`}>
                   ${price}
                 </span>
-                <span className={`mb-2 text-sm ${highlighted ? "text-blue-300" : "text-slate-400"}`}>/mes</span>
+                <span className={`mb-2 text-sm ${highlighted ? "text-blue-300" : "text-slate-400"}`}>
+                  {plan.priceUnit ?? "/mes"}
+                </span>
               </div>
-              <p className={`mt-1.5 text-xs ${highlighted ? "text-blue-400/70" : "text-slate-400"}`}>
-                o ${plan.annualPrice}/mes con plan anual
-              </p>
+              {plan.monthlyPrice !== plan.annualPrice && (
+                <p className={`mt-1.5 text-xs ${highlighted ? "text-blue-400/70" : "text-slate-400"}`}>
+                  o ${plan.annualPrice}/mes con plan anual
+                </p>
+              )}
             </>
           )}
         </div>
